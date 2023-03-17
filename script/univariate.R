@@ -31,17 +31,6 @@ apply(df[-1][-5], 2, sd)
 # Print a summary of the data
 summary(df)
 
-# global theme settings
-themeglb <- theme(
-  plot.background = element_rect(fill = "#FFFFFF"),
-  plot.title = element_text(size = 10, hjust = .5),
-  axis.title.x = element_text(size = 8, color = "black"),
-  axis.title.y = element_text(size = 8, color = "black")
-)
-
-# global plots settings
-options(repr.plot.width = 14, repr.plot.height = 10)
-
 # Define function to create histogram plot
 create_hist_plot <- function(data, variable, binwidth = 0.3, fill_color = "#69b3a2", bg_color = "#FFFFFF", title = NULL) {
   p <- ggplot(data) +

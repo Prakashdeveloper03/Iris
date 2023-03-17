@@ -15,3 +15,15 @@ df <- read_csv("data/Iris.csv")
 
 # Rename columns for clarity
 names(df) <- c("Id", "SepalLength", "SepalWidth", "PetalLength", "PetalWidth", "Species")
+
+
+# global theme settings
+themeglb <- theme(
+  plot.background = element_rect(fill = "#FFFFFF"),
+  plot.title = element_text(size = 10, hjust = .5),
+  axis.title.x = element_text(size = 8, color = "black"),
+  axis.title.y = element_text(size = 8, color = "black")
+)
+
+# global plots settings
+options(repr.plot.width = 14, repr.plot.height = 10)

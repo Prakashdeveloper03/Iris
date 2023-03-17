@@ -17,4 +17,4 @@ corrplot(cor(df[2:5]),
 ggpairs(df, mapping = aes(color = Species))
 
 # Save the scatter matrix plot
-ggsave("output/scatter_matrix.png", width = 16, height = 16, units = "cm")
+ggsave("output/scatter_matrix.png", width = 20, height = 20, units = "cm")

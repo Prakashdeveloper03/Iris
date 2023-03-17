@@ -28,7 +28,7 @@ scatter_list <- list(
 plot_grid(plotlist = scatter_list, nrow = 2, ncol = 2)
 
 # Save the plot
-ggsave("output/scatter.png", width = 12, height = 12, units = "cm")
+ggsave("output/scatter.png", width = 20, height = 20, units = "cm")
 
 # Define function to create density plot
 create_density_plot <- function(data, x, title) {
@@ -56,7 +56,7 @@ density_list <- list(
 plot_grid(plotlist = density_list, nrow = 2, ncol = 2)
 
 # Save the plot
-ggsave("output/density2.png", width = 12, height = 12, units = "cm")
+ggsave("output/density2.png", width = 20, height = 20, units = "cm")
 
 # Create boxplots using function
 create_boxplot <- function(x, y) {
@@ -84,4 +84,4 @@ boxplot_list <- list(
 plot_grid(plotlist = boxplot_list, nrow = 2, ncol = 2)
 
 # Save the plot
-ggsave("output/boxplot2.png", width = 12, height = 12, units = "cm")
+ggsave("output/boxplot2.png", width = 20, height = 20, units = "cm")
